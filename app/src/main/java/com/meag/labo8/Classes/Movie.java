@@ -2,6 +2,7 @@ package com.meag.labo8.Classes;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.ForeignKey;
 import android.arch.persistence.room.PrimaryKey;
 
 /**
@@ -25,8 +26,8 @@ public class Movie {
     @ColumnInfo(name = "nom_studio")
     private String nomEstudio;
 
-    public Movie() {
-    }
+    //public Movie() {
+    //}
 
     public Movie(String nomMovie, String nomCategory, String nomEstudio) {
         this.nomMovie = nomMovie;

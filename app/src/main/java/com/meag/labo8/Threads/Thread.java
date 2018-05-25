@@ -27,16 +27,17 @@ public class Thread extends AsyncTask {
         this.db = db;
     }
 
+    public void addMovie(List<Movie> movies){
+        movies.add(new Movie("Valerian", "Sci-fi", "MadHouse"));
+        movies.add(new Movie("Mama mia", "Drama", "IDR"));
+    }
+
     @Override
     protected Object doInBackground(Object[] objects){
         addMovie(movies);
         adapter = new MoviesAdapter(movies);
         rv.setAdapter(adapter);
         return null;
-    }
-
-    public void addMovie(List<Movie> movies){
-        movies.add(new Movie("Valerian", "Sci-fi", "MadHouse"));
     }
 
 }
