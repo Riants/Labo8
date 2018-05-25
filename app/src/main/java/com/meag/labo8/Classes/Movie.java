@@ -14,21 +14,21 @@ public class Movie {
     private int idMovies;
 
     @ColumnInfo(name = "nom_movie")
-    private int nomMovie;
+    private String nomMovie;
 
     @ColumnInfo(name = "desc_movie")
-    private int descMovie;
+    private String descMovie;
 
     @ColumnInfo(name = "nom_category")
-    private int nomCategory;
+    private String nomCategory;
 
     @ColumnInfo(name = "nom_studio")
-    private int nomEstudio;
+    private String nomEstudio;
 
     public Movie() {
     }
 
-    public Movie(int nomMovie, int nomCategory, int nomEstudio) {
+    public Movie(String nomMovie, String nomCategory, String nomEstudio) {
         this.nomMovie = nomMovie;
         this.nomCategory = nomCategory;
         this.nomEstudio = nomEstudio;
@@ -42,35 +42,35 @@ public class Movie {
         this.idMovies = idMovies;
     }
 
-    public int getNomMovie() {
+    public String getNomMovie() {
         return nomMovie;
     }
 
-    public void setNomMovie(int nomMovie) {
+    public void setNomMovie(String nomMovie) {
         this.nomMovie = nomMovie;
     }
 
-    public int getDescMovie() {
+    public String getDescMovie() {
         return descMovie;
     }
 
-    public void setDescMovie(int descMovie) {
+    public void setDescMovie(String descMovie) {
         this.descMovie = descMovie;
     }
 
-    public int getNomCategory() {
+    public String getNomCategory() {
         return nomCategory;
     }
 
-    public void setNomCategory(int nomCategory) {
+    public void setNomCategory(String nomCategory) {
         this.nomCategory = nomCategory;
     }
 
-    public int getNomEstudio() {
+    public String getNomEstudio() {
         return nomEstudio;
     }
 
-    public void setNomEstudio(int nomEstudio) {
+    public void setNomEstudio(String nomEstudio) {
         this.nomEstudio = nomEstudio;
     }
 }
